@@ -1,0 +1,12 @@
+2017-02-17 10:14:23 [bfdae84b] info    [native] Loading collector peer list from /home/flavio/dev/dyna+junit/dynatrace-6.5/agent/conf/collectorlist.IntelliJ
+2017-02-17 10:14:23 [bfdae84b] info    [native] 0 entries loaded
+2017-02-17 10:14:23 [bfdae84b] info    [native] Dynatrace Bootstrap Agent 6.5.0.1289
+2017-02-17 10:14:23 [bfdae84b] info    [native] Using /home/flavio/dev/dyna+junit/dynatrace-6.5 as Agent storage
+2017-02-17 10:14:23 [bfdae84b] info    [native] Log file is /home/flavio/dev/dyna+junit/dynatrace-6.5/log/dt_IntelliJ_bootstrap_4828.0.log
+2017-02-17 10:14:23 [bfdae84b] info    [native] Trying to connect to Collector for up to 30000 seconds
+2017-02-17 10:14:23 [bfdae84b] info    [native] Connected to Collector localhost:9998
+2017-02-17 10:14:23 [bfdae84b] info    [native] Handshake with Collector (6.5.0.1289) successful
+2017-02-17 10:14:23 [bfdae84b] info    [native] Collector requests to use agent version 6.5.0.1289 (hash: df8302e6b2545e2d51bfd530c51a28d0)
+2017-02-17 10:14:23 [bfdae84b] info    [native] Checking availability of requested agent binary linux-x86-64/libdtagentcore.so with version 6.5.0.1289
+2017-02-17 10:14:23 [bfdae84b] info    [native] Loading Agent /home/flavio/dev/dyna+junit/dynatrace-6.5/agent/downloads/6.5.0.1289/native/linux-x86-64/libdtagentcore.so
+2017-02-17 10:14:23 [bfdae84b] info    [native] Persisting current loaded version 6.5.0.1289 of agent IntelliJ (linux-x86-64/libdtagentcore.so) to file '/home/flavio/dev/dyna+junit/dynatrace-6.5/agent/conf/agentversion.IntelliJ'
