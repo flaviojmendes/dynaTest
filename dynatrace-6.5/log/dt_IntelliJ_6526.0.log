@@ -46,3 +46,7 @@
 2017-02-17 10:21:43 [1fff8804] info    [native] Hypervisor .................. unknown
 2017-02-17 10:21:43 [7815e804] info    [native] Eventsender channel connected successfully
 2017-02-17 10:21:52 [1fff8804] info    [native] License = license ok; 
+2017-02-17 11:47:32 [f9693803] info    [native] Shutting down Controller
+2017-02-17 11:47:32 [f9693803] info    [native] Shutting down EventSender
+2017-02-17 11:47:32 [f9693803] info    [native] Shutting down Instrumentor
+2017-02-17 11:47:32 [f9693803] info    [native] Shutdown successful
