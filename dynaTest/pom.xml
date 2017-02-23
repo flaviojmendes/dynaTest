@@ -98,7 +98,7 @@
         <dynaTrace.restart>true</dynaTrace.restart> <!-- true for restart, false for shutdown -->
 
         <!-- Property for goal: restartCollector -->
-        <dynaTrace.collector>localhost</dynaTrace.collector> <!-- collector name to restart/shutdown -->
+        <dynaTrace.collector>172.19.0.3</dynaTrace.collector> <!-- collector name to restart/shutdown -->
 
         <!-- This property will be used to store the actual Session Name for e.g.: Start/Stop Recording -->
         <dynaTrace.sessionNameProperty>dynaTrace.sessionName</dynaTrace.sessionNameProperty>
@@ -145,7 +145,7 @@
                     <forkMode>once</forkMode>
 
                     <!-- load the Java agent in the new JVM and also pass the test run id (dtTestrunID property) to the agent -->
-                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=localhost,wait=5,optionTestRunIdJava=123</argLine>
+                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=172.19.0.3,wait=5,optionTestRunIdJava=123</argLine>
                 </configuration>
             </plugin>
             <plugin>
