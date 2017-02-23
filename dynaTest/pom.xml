@@ -51,7 +51,7 @@
         <!-- Properties used by every Dynatrace Maven goal -->
         <dynaTrace.username>admin</dynaTrace.username>
         <dynaTrace.password>admin</dynaTrace.password>
-        <dynaTrace.serverUrl>https://localhost:8021</dynaTrace.serverUrl>
+        <dynaTrace.serverUrl>https://172.19.0.3:8021</dynaTrace.serverUrl>
         <dynaTrace.ignoreSSLErrors>true</dynaTrace.ignoreSSLErrors> <!-- allows to use SSL without valid certificate -->
 
         <!-- Properties for goal: activateConfiguration -->
