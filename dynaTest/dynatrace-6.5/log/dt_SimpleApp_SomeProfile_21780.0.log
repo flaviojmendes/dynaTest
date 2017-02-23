@@ -1,0 +1,58 @@
+2017-02-17 14:42:59 [63638893] info    [native] [AgentOptions] agent debug option: optionTestRunIdJava=83b12d7c-876a-4f7b-b5f3-eac54d6c9105
+2017-02-17 14:42:59 [63638893] info    [native] Loading collector peer list from /home/flavio/dev/dyna+junit/dynatrace-6.5/agent/conf/collectorlist.SimpleApp_SomeProfile
+2017-02-17 14:42:59 [63638893] info    [native] 0 entries loaded
+2017-02-17 14:42:59 [63638893] info    [native] POSIX clock type CLOCK_MONOTONIC detected
+2017-02-17 14:42:59 [63638893] info    [native] High-resolution POSIX timer detected.
+2017-02-17 14:42:59 [63638893] info    [native] ------------------------------------------------------------------------------------
+2017-02-17 14:42:59 [63638893] info    [native] Dynatrace Agent for Java Copyright (C) 2004-2016 Dynatrace, http://www.dynatrace.com
+2017-02-17 14:42:59 [63638893] info    [native] ------------------------------------------------------------------------------------
+2017-02-17 14:42:59 [63638893] info    [native] Version ..................... 6.5.0.1289, build date Sep 16 2016 08:47:21, svn rev. 654174
+2017-02-17 14:42:59 [63638893] info    [native] Command line is /usr/lib/jvm/java-8-oracle/jre/bin/java -agentpath:/home/flavio/dev/dyna+junit/dynatrace-6.5/agent/lib64/libdtagent.so=name=SimpleApp_SomeProfile,server=localhost,wait=5,optionTestRunIdJava=83b12d7c-876a-4f7b-b5f3-eac54d6c9105 -jar /home/flavio/dev/dyna+junit/simple-app-maven/target/surefire/surefirebooter1766124812212244984.jar /home/flavio/dev/dyna+junit/simple-app-maven/target/surefire/surefire3071577820858317491tmp /home/flavio/dev/dyna+junit/simple-app-maven/target/surefire/surefire_08577241336005523552tmp 
+2017-02-17 14:42:59 [63638893] info    [native] Build platform .............. Linux x86 64-bit
+2017-02-17 14:42:59 [63638893] info    [native] Platform .................... Linux 4.4.0-62-generic x86_64
+2017-02-17 14:42:59 [63638893] info    [native] System startup time ......... 2017-02-13 07:38:39
+2017-02-17 14:42:59 [63638893] info    [native] User name ................... flavio
+2017-02-17 14:42:59 [63638893] info    [native] Bootstrap version ........... 6.5.0.1289
+2017-02-17 14:42:59 [63638893] info    [native] Log level console ........... info
+2017-02-17 14:42:59 [63638893] info    [native] Log level file .............. info
+2017-02-17 14:42:59 [63638893] info    [native] Log file .................... /home/flavio/dev/dyna+junit/dynatrace-6.5/log/dt_SimpleApp_SomeProfile_21780.0.log
+2017-02-17 14:42:59 [63638893] info    [native] Agent host .................. fmendes
+2017-02-17 14:42:59 [63638893] info    [native] Agent library ............... /home/flavio/dev/dyna+junit/dynatrace-6.5/agent/downloads/6.5.0.1289/native/linux-x86-64/libdtagentcore.so
+2017-02-17 14:42:59 [63638893] info    [native] Options string .............. name=SimpleApp_SomeProfile,server=localhost,wait=5,optionTestRunIdJava=83b12d7c-876a-4f7b-b5f3-eac54d6c9105
+2017-02-17 14:42:59 [63638893] info    [native] Agent name .................. SimpleApp_SomeProfile
+2017-02-17 14:42:59 [63638893] info    [native] Server/Collector ............ localhost:9998
+2017-02-17 14:42:59 [63638893] info    [native] Interface type .............. JVMTI
+2017-02-17 14:42:59 [63638893] info    [native] Process ID .................. 21780
+2017-02-17 14:42:59 [63638893] info    [native] JVM name .................... Java HotSpot(TM) 64-Bit Server VM 25.121-b13
+2017-02-17 14:42:59 [63638893] info    [native] JVM vendor .................. Oracle Corporation
+2017-02-17 14:42:59 [63638893] info    [native] JVM info .................... mixed mode, sharing
+2017-02-17 14:42:59 [63638893] info    [native] Trying to connect to Server/Collector for up to 4 seconds
+2017-02-17 14:42:59 [63638893] info    [native] Reading LoadBalancing configuration from localhost:9998
+2017-02-17 14:42:59 [63638893] info    [native] Storing collector peer list (0 entries) to /home/flavio/dev/dyna+junit/dynatrace-6.5/agent/conf/collectorlist.SimpleApp_SomeProfile
+2017-02-17 14:42:59 [63638893] info    [native] Server/Collector ............ localhost:9998
+2017-02-17 14:42:59 [63638893] warning [native] Starting without instrumentation, agent did not match a system profile.
+2017-02-17 14:42:59 [63638893] info    [native] Instrumentation channel connected successfully
+2017-02-17 14:42:59 [63638893] info    [native] Received instrumentation blacklist (0 classes, 0 KiB)
+2017-02-17 14:42:59 [63638893] info    [native] Connected to Server/Collector localhost:9998
+2017-02-17 14:42:59 [63638893] info    [native] Agent classes defined successfully
+2017-02-17 14:43:00 [63638893] info    [native] Platform .................... Linux 4.4.0-62-generic, amd64
+2017-02-17 14:43:00 [63638893] info    [java  ] [AgentOptions] Successfully activated java option: optionTestRunIdJava=83b12d7c-876a-4f7b-b5f3-eac54d6c9105
+2017-02-17 14:43:00 [63638893] info    [java  ] Java Agent Version .......... 6.5.0.1289, Agent15
+2017-02-17 14:43:00 [436fa893] info    [native] Control channel connected successfully
+2017-02-17 14:43:00 [436fa893] info    [native] Transaction sampling started.
+2017-02-17 14:43:00 [436fa893] info    [native] Process metrics pattern ..... not set
+2017-02-17 14:43:00 [436fa893] warning [native] Controller: received disable instrumentation command from collector (reason=12)
+2017-02-17 14:43:00 [436fa893] warning [native] Instrumentation already disabled (state 2), ignoring request to change it
+2017-02-17 14:43:00 [436fa893] info    [native] Agent ID .................... 07828abf
+2017-02-17 14:43:00 [436fa893] info    [native] Process ID .................. 21780
+2017-02-17 14:43:00 [436fa893] info    [native] Capture ..................... disabled
+2017-02-17 14:43:00 [436fa893] info    [native] Capture CPU times ........... disabled
+2017-02-17 14:43:00 [436fa893] info    [native] Hot Sensor Placement ........ not available
+2017-02-17 14:43:00 [436fa893] info    [native] Hypervisor .................. unknown
+2017-02-17 14:43:00 [63638893] info    [native] Eventsender channel connected successfully
+2017-02-17 14:43:01 [436fa893] info    [native] License = skipped by license check - agent did not match a system profile; 
+2017-02-17 14:43:02 [63638893] info    [native] Shutting down Controller
+2017-02-17 14:43:02 [63638893] info    [native] Shutting down EventSender
+2017-02-17 14:43:02 [efff8892] warning [native] Agent not instrumented properly, license cannot be verified
+2017-02-17 14:43:02 [63638893] info    [native] Shutting down Instrumentor
+2017-02-17 14:43:02 [63638893] info    [native] Shutdown successful

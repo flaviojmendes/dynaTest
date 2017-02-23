@@ -43,7 +43,7 @@
             dynaTrace.systemProfile - defines system profile name used by startTest, enableProfile, activateConfiguration, ... (it's plugin's property)
 
         -->
-        <dynaTrace.agentPath>"/home/flavio/dev/dyna+junit/dynatrace-6.5/agent/lib64/libdtagent.so"</dynaTrace.agentPath>
+        <dynaTrace.agentPath>"dynatrace-6.5/agent/lib64/libdtagent.so"</dynaTrace.agentPath>
         <dynaTrace.agentMapping>SimpleApp_SomeProfile</dynaTrace.agentMapping>
         <dynaTrace.systemProfile>Jenkins-Test</dynaTrace.systemProfile> <!-- available as "profileName" in plugin (local) scope -->
         <!-- *** *** -->

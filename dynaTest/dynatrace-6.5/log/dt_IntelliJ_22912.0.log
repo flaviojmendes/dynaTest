@@ -1,0 +1,57 @@
+2017-02-16 16:28:26 [9e920813] info    [native] [AgentOptions] agent debug option: optionTestRunIdJava=2c885f74-a8ec-467f-8225-b0c501b4b4d5
+2017-02-16 16:28:26 [9e920813] info    [native] Loading collector peer list from /home/flavio/dev/dyna+junit/dynatrace-6.5/agent/conf/collectorlist.IntelliJ
+2017-02-16 16:28:26 [9e920813] info    [native] 0 entries loaded
+2017-02-16 16:28:26 [9e920813] info    [native] POSIX clock type CLOCK_MONOTONIC detected
+2017-02-16 16:28:26 [9e920813] info    [native] High-resolution POSIX timer detected.
+2017-02-16 16:28:26 [9e920813] info    [native] ------------------------------------------------------------------------------------
+2017-02-16 16:28:26 [9e920813] info    [native] Dynatrace Agent for Java Copyright (C) 2004-2016 Dynatrace, http://www.dynatrace.com
+2017-02-16 16:28:26 [9e920813] info    [native] ------------------------------------------------------------------------------------
+2017-02-16 16:28:26 [9e920813] info    [native] Version ..................... 6.5.0.1289, build date Sep 16 2016 08:47:21, svn rev. 654174
+2017-02-16 16:28:26 [9e920813] info    [native] Command line is /usr/lib/jvm/java-8-oracle/bin/java -ea -agentpath:/home/flavio/dev/dyna+junit/dynatrace-6.5/agent/lib64/libdtagent.so=wait=30000,name=IntelliJ,server=localhost,port=9998,optionTestRunIdJava=2c885f74-a8ec-467f-8225-b0c501b4b4d5 -Didea.launcher.port=7536 -Didea.launcher.bin.path=/home/flavio/dev/idea-IC-163.12024.16/bin -Dfile.encoding=UTF-8 -classpath /home/flavio/dev/idea-IC-163.12024.16/lib/idea_rt.jar:/home/flavio/dev/idea-IC-163.12024.16/plugins/junit/lib/junit-rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/deploy.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jfxrt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-oracle/jre/lib/javaws.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfxswt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-oracle/jre/lib/plugin.jar:/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/home/flavio/dev/dyna+junit/calculadora/build/classes/test:/home/flavio/dev/dyna+junit/calculadora/build/classes/main:/home/flavio/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar:/home/flavio/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar com.intellij.rt.execution.application.AppMain com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 br.com.xys.utils.CalculadoraTest 
+2017-02-16 16:28:26 [9e920813] info    [native] Build platform .............. Linux x86 64-bit
+2017-02-16 16:28:26 [9e920813] info    [native] Platform .................... Linux 4.4.0-62-generic x86_64
+2017-02-16 16:28:26 [9e920813] info    [native] System startup time ......... 2017-02-13 07:38:39
+2017-02-16 16:28:26 [9e920813] info    [native] User name ................... flavio
+2017-02-16 16:28:26 [9e920813] info    [native] Bootstrap version ........... 6.5.0.1289
+2017-02-16 16:28:26 [9e920813] info    [native] Log level console ........... info
+2017-02-16 16:28:26 [9e920813] info    [native] Log level file .............. info
+2017-02-16 16:28:26 [9e920813] info    [native] Log file .................... /home/flavio/dev/dyna+junit/dynatrace-6.5/log/dt_IntelliJ_22912.0.log
+2017-02-16 16:28:26 [9e920813] info    [native] Agent host .................. fmendes
+2017-02-16 16:28:26 [9e920813] info    [native] Agent library ............... /home/flavio/dev/dyna+junit/dynatrace-6.5/agent/downloads/6.5.0.1289/native/linux-x86-64/libdtagentcore.so
+2017-02-16 16:28:26 [9e920813] info    [native] Options string .............. wait=30000,name=IntelliJ,server=localhost,port=9998,optionTestRunIdJava=2c885f74-a8ec-467f-8225-b0c501b4b4d5
+2017-02-16 16:28:26 [9e920813] info    [native] Agent name .................. IntelliJ
+2017-02-16 16:28:26 [9e920813] info    [native] Server/Collector ............ localhost:9998
+2017-02-16 16:28:26 [9e920813] info    [native] Interface type .............. JVMTI
+2017-02-16 16:28:26 [9e920813] info    [native] Process ID .................. 22912
+2017-02-16 16:28:26 [9e920813] info    [native] JVM name .................... Java HotSpot(TM) 64-Bit Server VM 25.121-b13
+2017-02-16 16:28:26 [9e920813] info    [native] JVM vendor .................. Oracle Corporation
+2017-02-16 16:28:26 [9e920813] info    [native] JVM info .................... mixed mode, sharing
+2017-02-16 16:28:26 [9e920813] info    [native] Trying to connect to Server/Collector for up to 29999 seconds
+2017-02-16 16:28:26 [9e920813] info    [native] Reading LoadBalancing configuration from localhost:9998
+2017-02-16 16:28:26 [9e920813] info    [native] Storing collector peer list (0 entries) to /home/flavio/dev/dyna+junit/dynatrace-6.5/agent/conf/collectorlist.IntelliJ
+2017-02-16 16:28:26 [9e920813] info    [native] Server/Collector ............ localhost:9998
+2017-02-16 16:28:26 [9e920813] warning [native] Starting without instrumentation, agent did not match a system profile.
+2017-02-16 16:28:26 [9e920813] info    [native] Instrumentation channel connected successfully
+2017-02-16 16:28:26 [9e920813] info    [native] Received instrumentation blacklist (0 classes, 0 KiB)
+2017-02-16 16:28:26 [9e920813] info    [native] Connected to Server/Collector localhost:9998
+2017-02-16 16:28:26 [9e920813] info    [native] Agent classes defined successfully
+2017-02-16 16:28:26 [9e920813] info    [native] Platform .................... Linux 4.4.0-62-generic, amd64
+2017-02-16 16:28:26 [9e920813] info    [java  ] [AgentOptions] Successfully activated java option: optionTestRunIdJava=2c885f74-a8ec-467f-8225-b0c501b4b4d5
+2017-02-16 16:28:26 [9e920813] info    [java  ] Java Agent Version .......... 6.5.0.1289, Agent15
+2017-02-16 16:28:26 [5ec3a813] info    [native] Control channel connected successfully
+2017-02-16 16:28:26 [5ec3a813] info    [native] Transaction sampling started.
+2017-02-16 16:28:26 [5ec3a813] info    [native] Process metrics pattern ..... not set
+2017-02-16 16:28:26 [5ec3a813] warning [native] Controller: received disable instrumentation command from collector (reason=12)
+2017-02-16 16:28:26 [5ec3a813] warning [native] Instrumentation already disabled (state 2), ignoring request to change it
+2017-02-16 16:28:26 [5ec3a813] info    [native] Agent ID .................... 85349068
+2017-02-16 16:28:26 [5ec3a813] info    [native] Process ID .................. 22912
+2017-02-16 16:28:26 [5ec3a813] info    [native] Capture ..................... disabled
+2017-02-16 16:28:26 [5ec3a813] info    [native] Capture CPU times ........... disabled
+2017-02-16 16:28:26 [5ec3a813] info    [native] Hot Sensor Placement ........ not available
+2017-02-16 16:28:26 [5ec3a813] info    [native] Hypervisor .................. unknown
+2017-02-16 16:28:26 [9e920813] info    [native] Eventsender channel connected successfully
+2017-02-16 16:28:26 [9e920813] info    [native] Shutting down Controller
+2017-02-16 16:28:26 [9e920813] info    [native] Shutting down EventSender
+2017-02-16 16:28:26 [2f7f9813] warning [native] Agent not instrumented properly, license cannot be verified
+2017-02-16 16:28:26 [9e920813] info    [native] Shutting down Instrumentor
+2017-02-16 16:28:26 [9e920813] info    [native] Shutdown successful
