@@ -1,0 +1,54 @@
+2017-02-23 07:37:23 [aae41831] info    [native] [AgentOptions] agent debug option: optionTestRunIdJava=123
+2017-02-23 07:37:23 [aae41831] info    [native] Loading collector peer list from /home/flavio/dev/dyna+junit/dynaTest/dynatrace-6.5/agent/conf/collectorlist.Test-Agent
+2017-02-23 07:37:23 [aae41831] info    [native] 0 entries loaded
+2017-02-23 07:37:23 [aae41831] info    [native] POSIX clock type CLOCK_MONOTONIC detected
+2017-02-23 07:37:24 [aae41831] info    [native] High-resolution POSIX timer detected.
+2017-02-23 07:37:24 [aae41831] info    [native] ------------------------------------------------------------------------------------
+2017-02-23 07:37:24 [aae41831] info    [native] Dynatrace Agent for Java Copyright (C) 2004-2016 Dynatrace, http://www.dynatrace.com
+2017-02-23 07:37:24 [aae41831] info    [native] ------------------------------------------------------------------------------------
+2017-02-23 07:37:24 [aae41831] info    [native] Version ..................... 6.5.0.1289, build date Sep 16 2016 08:47:21, svn rev. 654174
+2017-02-23 07:37:24 [aae41831] info    [native] Command line is /usr/lib/jvm/java-8-oracle/jre/bin/java -agentpath:dynatrace-6.5/agent/lib64/libdtagent.so=name=Test-Agent,server=localhost,wait=5,optionTestRunIdJava=123 -jar /home/flavio/dev/dyna+junit/dynaTest/target/surefire/surefirebooter5029979160154994539.jar /home/flavio/dev/dyna+junit/dynaTest/target/surefire/surefire3947237426429700265tmp /home/flavio/dev/dyna+junit/dynaTest/target/surefire/surefire_06969443625380478562tmp 
+2017-02-23 07:37:24 [aae41831] info    [native] Build platform .............. Linux x86 64-bit
+2017-02-23 07:37:24 [aae41831] info    [native] Platform .................... Linux 4.4.0-62-generic x86_64
+2017-02-23 07:37:24 [aae41831] info    [native] System startup time ......... 2017-02-22 14:07:42
+2017-02-23 07:37:24 [aae41831] info    [native] User name ................... flavio
+2017-02-23 07:37:24 [aae41831] info    [native] Bootstrap version ........... 6.5.0.1289
+2017-02-23 07:37:24 [aae41831] info    [native] Log level console ........... info
+2017-02-23 07:37:24 [aae41831] info    [native] Log level file .............. info
+2017-02-23 07:37:24 [aae41831] info    [native] Log file .................... /home/flavio/dev/dyna+junit/dynaTest/dynatrace-6.5/log/dt_Test-Agent_7053.0.log
+2017-02-23 07:37:24 [aae41831] info    [native] Agent host .................. fmendes
+2017-02-23 07:37:24 [aae41831] info    [native] Agent library ............... /home/flavio/dev/dyna+junit/dynaTest/dynatrace-6.5/agent/downloads/6.5.0.1289/native/linux-x86-64/libdtagentcore.so
+2017-02-23 07:37:24 [aae41831] info    [native] Options string .............. name=Test-Agent,server=localhost,wait=5,optionTestRunIdJava=123
+2017-02-23 07:37:24 [aae41831] info    [native] Agent name .................. Test-Agent
+2017-02-23 07:37:24 [aae41831] info    [native] Server/Collector ............ localhost:9998
+2017-02-23 07:37:24 [aae41831] info    [native] Interface type .............. JVMTI
+2017-02-23 07:37:24 [aae41831] info    [native] Process ID .................. 7053
+2017-02-23 07:37:24 [aae41831] info    [native] JVM name .................... Java HotSpot(TM) 64-Bit Server VM 25.121-b13
+2017-02-23 07:37:24 [aae41831] info    [native] JVM vendor .................. Oracle Corporation
+2017-02-23 07:37:24 [aae41831] info    [native] JVM info .................... mixed mode, sharing
+2017-02-23 07:37:24 [aae41831] info    [native] Trying to connect to Server/Collector for up to 4 seconds
+2017-02-23 07:37:24 [aae41831] info    [native] Reading LoadBalancing configuration from localhost:9998
+2017-02-23 07:37:24 [aae41831] info    [native] Storing collector peer list (0 entries) to /home/flavio/dev/dyna+junit/dynaTest/dynatrace-6.5/agent/conf/collectorlist.Test-Agent
+2017-02-23 07:37:24 [aae41831] info    [native] Server/Collector ............ localhost:9998
+2017-02-23 07:37:24 [aae41831] info    [native] Instrumentation channel connected successfully
+2017-02-23 07:37:24 [aae41831] info    [native] Received instrumentation blacklist (5289 classes, 375 KiB)
+2017-02-23 07:37:24 [aae41831] info    [native] Connected to Server/Collector localhost:9998
+2017-02-23 07:37:24 [aae41831] info    [native] Agent classes defined successfully
+2017-02-23 07:37:24 [aae41831] info    [native] Platform .................... Linux 4.4.0-62-generic, amd64
+2017-02-23 07:37:24 [aae41831] info    [java  ] [AgentOptions] Successfully activated java option: optionTestRunIdJava=123
+2017-02-23 07:37:24 [aae41831] info    [java  ] Java Agent Version .......... 6.5.0.1289, Agent15
+2017-02-23 07:37:24 [6ae38831] info    [native] Control channel connected successfully
+2017-02-23 07:37:24 [6ae38831] info    [native] Transaction sampling started.
+2017-02-23 07:37:24 [6ae38831] info    [native] Average transformation time for 1333 classes/modules was 0ms - maximum set to 60ms
+2017-02-23 07:37:24 [6ae38831] info    [native] Process metrics pattern ..... not set
+2017-02-23 07:37:24 [6ae38831] info    [native] Agent ID .................... 8858e9c0
+2017-02-23 07:37:24 [6ae38831] info    [native] Process ID .................. 7053
+2017-02-23 07:37:24 [6ae38831] info    [native] Recovery .................... enabled
+2017-02-23 07:37:24 [6ae38831] info    [native] Hot Sensor Placement ........ available
+2017-02-23 07:37:24 [6ae38831] info    [native] Hypervisor .................. unknown
+2017-02-23 07:37:24 [aae41831] info    [native] Eventsender channel connected successfully
+2017-02-23 07:37:26 [6ae38831] info    [native] License = license ok; 
+2017-02-23 07:37:29 [aae41831] info    [native] Shutting down Controller
+2017-02-23 07:37:29 [aae41831] info    [native] Shutting down EventSender
+2017-02-23 07:37:29 [aae41831] info    [native] Shutting down Instrumentor
+2017-02-23 07:37:29 [aae41831] info    [native] Shutdown successful
