@@ -12,7 +12,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = UiApplication.class)
@@ -27,7 +26,7 @@ public class UiApplicationTests {
 	public void homePageAcessible() {
 		ResponseEntity<String> response = new TestRestTemplate().getForEntity("http://localhost:" + port + "/", String.class);
 		assertEquals(HttpStatus.OK, response.getStatusCode());
-		assertTrue(false);
+
 	}
 
 }
