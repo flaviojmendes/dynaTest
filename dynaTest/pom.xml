@@ -98,7 +98,7 @@
         <dynaTrace.restart>true</dynaTrace.restart> <!-- true for restart, false for shutdown -->
 
         <!-- Property for goal: restartCollector -->
-        <dynaTrace.collector>172.19.0.3</dynaTrace.collector> <!-- collector name to restart/shutdown -->
+        <dynaTrace.collector>172.19.0.4</dynaTrace.collector> <!-- collector name to restart/shutdown -->
 
         <!-- This property will be used to store the actual Session Name for e.g.: Start/Stop Recording -->
         <dynaTrace.sessionNameProperty>dynaTrace.sessionName</dynaTrace.sessionNameProperty>
