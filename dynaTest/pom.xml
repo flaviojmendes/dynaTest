@@ -169,21 +169,22 @@
                 <artifactId>dtAutomation</artifactId>
                 <version>${dynaTrace.version}</version>
                 <executions>
-                <execution>
-                    <id>DT_StartTest_UnitTest</id>
-                    <configuration>
-                        <!-- the build id (passed from Jenkins) will be re-used by Dynatrace to retrieve the test results -->
-                        <versionBuild>${BUILD_ID}</versionBuild>
-                        <profileName>junit-example-dt-maven</profileName>
-                        <category>unit</category>
-                    </configuration>
-                    <!-- start this test in the process-test-classes phase which is the one before the tests are executed -->
-                    <phase>process-test-classes</phase>
-                    <goals>
-                        <!-- call the startTest goal of the Dynatrace Maven plugin -->
-                        <goal>startTest</goal>
-                    </goals>
-                </execution>
+                    <execution>
+                        <id>DT_StartTest_UnitTest</id>
+                        <configuration>
+                            <!-- the build id (passed from Jenkins) will be re-used by Dynatrace to retrieve the test results -->
+                            <versionBuild>${BUILD_ID}</versionBuild>
+                            <profileName>junit-example-dt-maven</profileName>
+                            <category>unit</category>
+                        </configuration>
+                        <!-- start this test in the process-test-classes phase which is the one before the tests are executed -->
+                        <phase>process-test-classes</phase>
+                        <goals>
+                            <!-- call the startTest goal of the Dynatrace Maven plugin -->
+                            <goal>startTest</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
