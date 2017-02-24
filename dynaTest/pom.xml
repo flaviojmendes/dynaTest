@@ -145,7 +145,7 @@
                     <forkMode>once</forkMode>
 
                     <!-- load the Java agent in the new JVM and also pass the test run id (dtTestrunID property) to the agent -->
-                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=172.19.0.3,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
+                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=dtcollector,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
                 </configuration>
             </plugin>
             <plugin>
@@ -158,7 +158,24 @@
                     <profileName>${dynaTrace.systemProfile}</profileName>
                 </configuration>
                 <executions>
+                    <execution>
+                        <id>UnitTestWithDynatrace</id>
+                        <configuration>
+                            <!-- we can also define properties here (for single execution) -->
+                            <versionBuild>${BUILD_ID}</versionBuild>
 
+                            <category>unit</category>
+                            <additionalProperties>
+                                <somekey>somevalue</somekey>
+                            </additionalProperties>
+                        </configuration>
+                        <!-- start this test in the process-test-classes phase which is the one before the tests are executed -->
+                        <phase>process-test-classes</phase>
+                        <goals>
+                            <!-- call the startTest goal of the dT plugin -->
+                            <goal>startTest</goal>
+                        </goals>
+                    </execution>
                     <execution>
                         <id>DT_StartTest_IntegrationTest</id>
                         <configuration>
@@ -184,7 +201,7 @@
                     </includes>
                     <!-- dtTestrunID is passed from the Dynatrace Maven Plug-in -->
                     <!-- dt_agent_path, dt_agent_name and dt_server needs to be configured in your script or passed as environment variable -->
-                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=172.19.0.3,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
+                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=dtcollector,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
                 </configuration>
                 <executions>
                     <execution>
