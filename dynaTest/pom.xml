@@ -145,7 +145,7 @@
                     <forkMode>once</forkMode>
 
                     <!-- load the Java agent in the new JVM and also pass the test run id (dtTestrunID property) to the agent -->
-                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=172.19.0.3,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
+                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=dtcollector,loglevel=info,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
                 </configuration>
             </plugin>
             <plugin>
@@ -204,7 +204,7 @@
                 <configuration>
                     <!-- dtTestrunID is passed from the Dynatrace Maven Plug-in -->
                     <!-- dt_agent_path, dt_agent_name and dt_server needs to be configured in your script or passed as environment variable -->
-                    <argLine>-agentpath:"dynatrace-6.5/agent/lib64/libdtagent.so"=name=Test-Agent_Jenkins-Test,server=dtcollector,optionTestRunIdJava=${dtTestrunID}</argLine>
+                    <argLine>-agentpath:"dynatrace-6.5/agent/lib64/libdtagent.so"=name=Test-Agent_Jenkins-Test,server=dtcollector,loglevel=info,optionTestRunIdJava=${dtTestrunID}</argLine>
                 </configuration>
             </plugin>
 
