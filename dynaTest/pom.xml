@@ -116,7 +116,7 @@
         <dynaTrace.reanalyzeSessionTimeout>60000</dynaTrace.reanalyzeSessionTimeout> <!-- timeout to wait till reanalyze session is finished - in ms (default: 60000) -->
         <dynaTrace.reanalyzeSessionPollingInterval>5000</dynaTrace.reanalyzeSessionPollingInterval> <!-- polling interval while waiting for reanalyze to be finished in ms (default:5000) -->
         <dynaTrace.reanalyzeStatusProperty>dynaTrace.status</dynaTrace.reanalyzeStatusProperty> <!-- property that will be set with true when reanalyze was finished within the timeout-->
-        <dynaTrace.testCategory>unit</dynaTrace.testCategory>
+
         <!-- Properties for goal: startTest -->
         <!-- we are using properties from (plugin) local-scope, so this is commented out -->
         <!--
@@ -125,7 +125,7 @@
         <dynaTrace.versionBuild>3</dynaTrace.versionBuild>
         <dynaTrace.versionMilestone>m4</dynaTrace.versionMilestone>
         <dynaTrace.marker>marker</dynaTrace.marker>
-
+        <dynaTrace.testCategory>unit</dynaTrace.testCategory>
         <dynaTrace.platform>Linux</dynaTrace.platform>
         <dynaTrace.ignoreVersionTag>false</dynaTrace.ignoreVersionTag> --> <!-- if true, ignores version from POM and uses version properties above -->
     </properties>
