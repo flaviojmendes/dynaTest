@@ -167,7 +167,7 @@
             <plugin>
                 <groupId>dynaTrace</groupId>
                 <artifactId>dtAutomation</artifactId>
-                <version>${dynaTrace.version}</version>
+                <version>6.5.0</version>
                 <executions>
                     <execution>
                         <id>DT_StartTest_UnitTest</id>
