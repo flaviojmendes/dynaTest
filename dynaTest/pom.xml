@@ -147,7 +147,7 @@
                     <forkMode>once</forkMode>
 
                     <!-- load the Java agent in the new JVM and also pass the test run id (dtTestrunID property) to the agent -->
-                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=http://dtserver:9998,loglevel=info,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
+                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=http://dtcollector:9998,loglevel=info,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
                 </configuration>
             </plugin>
             <plugin>
