@@ -53,7 +53,7 @@
         <!-- Properties used by every Dynatrace Maven goal -->
         <dynaTrace.username>admin</dynaTrace.username>
         <dynaTrace.password>admin</dynaTrace.password>
-        <dynaTrace.serverUrl>https://172.19.0.2:8021</dynaTrace.serverUrl>
+        <dynaTrace.serverUrl>https://dtserver:8021</dynaTrace.serverUrl>
         <dynaTrace.ignoreSSLErrors>true</dynaTrace.ignoreSSLErrors> <!-- allows to use SSL without valid certificate -->
 
         <!-- Properties for goal: activateConfiguration -->
@@ -147,7 +147,7 @@
                     <forkMode>once</forkMode>
 
                     <!-- load the Java agent in the new JVM and also pass the test run id (dtTestrunID property) to the agent -->
-                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=http://172.19.0.2:9998,loglevel=info,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
+                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=http://dtserver:9998,loglevel=info,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
                 </configuration>
             </plugin>
             <plugin>
