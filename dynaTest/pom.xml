@@ -186,7 +186,7 @@
                         <id>DT_StartTest_UnitTest</id>
                         <configuration>
                             <!-- the build id (passed from Jenkins) will be re-used by Dynatrace to retrieve the test results -->
-                            <versionBuild>${BUILD_ID}</versionBuild>
+                            <versionBuild>${dtTestrunID}</versionBuild>
                             <profileName>Jenkins-Test</profileName>
                             <category>unit</category>
                         </configuration>
