@@ -134,10 +134,8 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -147,9 +145,68 @@
                     <forkMode>once</forkMode>
 
                     <!-- load the Java agent in the new JVM and also pass the test run id (dtTestrunID property) to the agent -->
-                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=dtcollector,loglevel=info,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
+                    <argLine>-agentpath:${dynaTrace.agentPath}=
+                        name=${dynaTrace.agentMapping},
+                        server=${dynaTrace.collector},optionTestRunIdJava=${dtTestrunID}</argLine>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>dynaTrace</groupId>
+                <artifactId>dtAutomation</artifactId>
+                <version>${dynaTrace.version}</version>
+                <executions>
+                    <execution>
+                        <id>DT_StartTest_UnitTest</id>
+                        <configuration>
+                            <!-- define the configuration properties
+                                 for this test run -->
+                            <versionMajor>1</versionMajor>
+                            <versionMinor>2</versionMinor>
+                            <versionRevision>3</versionRevision>
+                            <versionMilestone>5</versionMilestone>
+                            <versionBuild>${BUILD_ID}</versionBuild>
+                            <category>unit</category>
+                            <profileName>Jenkins-Test</profileName>
+                            <username>admin</username>
+                            <password>admin</password>
+                            <serverUrl>http://dtserver:8020</serverUrl>
+                            <additionalProperties></additionalProperties>
+                        </configuration>
+                        <!-- start this test in the process-test-classes phase
+                             which is the one before the tests are executed -->
+                        <phase>process-test-classes</phase>
+                        <goals>
+                            <!-- call the startTest goal of the dT plugin -->
+                            <goal>startTest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -173,32 +230,6 @@
 
 
 
-
-
-
-
-            <plugin>
-                <groupId>dynaTrace</groupId>
-                <artifactId>dtAutomation</artifactId>
-                <version>6.5.0</version>
-                <executions>
-                    <execution>
-                        <id>DT_StartTest_UnitTest</id>
-                        <configuration>
-                            <!-- the build id (passed from Jenkins) will be re-used by Dynatrace to retrieve the test results -->
-                            <versionBuild>${dtTestrunID}</versionBuild>
-                            <profileName>Jenkins-Test</profileName>
-                            <category>unit</category>
-                        </configuration>
-                        <!-- start this test in the process-test-classes phase which is the one before the tests are executed -->
-                        <phase>process-test-classes</phase>
-                        <goals>
-                            <!-- call the startTest goal of the Dynatrace Maven plugin -->
-                            <goal>startTest</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
 
 
 
