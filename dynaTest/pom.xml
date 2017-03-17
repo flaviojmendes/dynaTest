@@ -132,6 +132,7 @@
         <dynaTrace.ignoreVersionTag>false</dynaTrace.ignoreVersionTag> --> <!-- if true, ignores version from POM and uses version properties above -->
     </properties>
 
+
     <build>
         <plugins>
             <plugin>
@@ -147,8 +148,72 @@
                     <forkMode>once</forkMode>
 
                     <!-- load the Java agent in the new JVM and also pass the test run id (dtTestrunID property) to the agent -->
-                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=dtcollector,loglevel=info,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
+                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=172.19.0.3,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>dynaTrace</groupId>
+                <artifactId>dtAutomation</artifactId>
+                <version>6.5.0</version>
+
+                <!-- we can define properties here (this would be available for any execution) -->
+                <configuration>
+                    <profileName>${dynaTrace.systemProfile}</profileName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>UnitTestWithDynatrace</id>
+                        <configuration>
+                            <!-- we can also define properties here (for single execution) -->
+                            <versionBuild>${BUILD_ID}</versionBuild>
+
+                            <category>unit</category>
+                            <additionalProperties>
+                                <somekey>somevalue</somekey>
+                            </additionalProperties>
+                        </configuration>
+                        <!-- start this test in the process-test-classes phase which is the one before the tests are executed -->
+                        <phase>process-test-classes</phase>
+                        <goals>
+                            <!-- call the startTest goal of the dT plugin -->
+                            <goal>startTest</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>DT_StartTest_IntegrationTest</id>
+                        <configuration>
+                            <!-- the build id (passed from Jenkins) will be re-used by Dynatrace to retrieve the test results -->
+                            <versionBuild>${BUILD_ID}</versionBuild>
+                            <profileName>junit-example-dt-maven</profileName>
+                            <category>performance</category>
+                        </configuration>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>startTest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.19.1</version>
+                <configuration>
+                    <includes>
+                        <include>**/Integration*.java</include>
+                    </includes>
+                    <!-- dtTestrunID is passed from the Dynatrace Maven Plug-in -->
+                    <!-- dt_agent_path, dt_agent_name and dt_server needs to be configured in your script or passed as environment variable -->
+                    <argLine>-agentpath:${dynaTrace.agentPath}=name=${dynaTrace.agentMapping},server=172.19.0.3,wait=5,optionTestRunIdJava=${dtTestrunID}</argLine>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -170,52 +235,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-
-
-
-
-
-
-            <plugin>
-                <groupId>dynaTrace</groupId>
-                <artifactId>dtAutomation</artifactId>
-                <version>6.5.0</version>
-                <executions>
-                    <execution>
-                        <id>DT_StartTest_UnitTest</id>
-                        <configuration>
-                            <!-- the build id (passed from Jenkins) will be re-used by Dynatrace to retrieve the test results -->
-                            <versionBuild>${BUILD_ID}</versionBuild>
-                            <profileName>Jenkins-Test</profileName>
-                            <category>unit</category>
-                        </configuration>
-                        <!-- start this test in the process-test-classes phase which is the one before the tests are executed -->
-                        <phase>process-test-classes</phase>
-                        <goals>
-                            <!-- call the startTest goal of the Dynatrace Maven plugin -->
-                            <goal>startTest</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19.1</version>
-                <configuration>
-                    <!-- dtTestrunID is passed from the Dynatrace Maven Plug-in -->
-                    <!-- dt_agent_path, dt_agent_name and dt_server needs to be configured in your script or passed as environment variable -->
-                    <argLine>-agentpath:"dynatrace-6.5/agent/lib64/libdtagent.so"=name=Test-Agent_Jenkins-Test,server=dtcollector,loglevel=info,optionTestRunIdJava=${dtTestrunID}</argLine>
-                </configuration>
-            </plugin>
-
-
-
-
-
-
-
         </plugins>
     </build>
 </project>

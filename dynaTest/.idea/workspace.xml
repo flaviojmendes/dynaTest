@@ -20,8 +20,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="220" column="10" lean-forward="false" selection-start-line="220" selection-start-column="10" selection-end-line="220" selection-end-column="10" />
+            <state relative-caret-position="1442">
+              <caret line="238" column="12" lean-forward="false" selection-start-line="238" selection-start-column="12" selection-end-line="238" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -1045,8 +1045,8 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/demo/controller/MockTest.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="220" column="10" lean-forward="false" selection-start-line="220" selection-start-column="10" selection-end-line="220" selection-end-column="10" />
+        <state relative-caret-position="1442">
+          <caret line="238" column="12" lean-forward="false" selection-start-line="238" selection-start-column="12" selection-end-line="238" selection-end-column="12" />
           <folding />
         </state>
       </provider>
