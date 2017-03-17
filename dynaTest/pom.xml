@@ -158,25 +158,15 @@
                     <execution>
                         <id>DT_StartTest_UnitTest</id>
                         <configuration>
-                            <!-- define the configuration properties
-                                 for this test run -->
-                            <versionMajor>1</versionMajor>
-                            <versionMinor>2</versionMinor>
-                            <versionRevision>3</versionRevision>
-                            <versionMilestone>5</versionMilestone>
+                            <!-- the build id (passed from Jenkins) will be re-used by Dynatrace to retrieve the test results -->
                             <versionBuild>${BUILD_ID}</versionBuild>
-                            <category>unit</category>
                             <profileName>Jenkins-Test</profileName>
-                            <username>admin</username>
-                            <password>admin</password>
-                            <serverUrl>http://dtserver:8020</serverUrl>
-                            <additionalProperties></additionalProperties>
+                            <category>unit</category>
                         </configuration>
-                        <!-- start this test in the process-test-classes phase
-                             which is the one before the tests are executed -->
+                        <!-- start this test in the process-test-classes phase which is the one before the tests are executed -->
                         <phase>process-test-classes</phase>
                         <goals>
-                            <!-- call the startTest goal of the dT plugin -->
+                            <!-- call the startTest goal of the Dynatrace Maven plugin -->
                             <goal>startTest</goal>
                         </goals>
                     </execution>
@@ -185,22 +175,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
 
             <plugin>
                 <groupId>org.springframework.boot</groupId>
