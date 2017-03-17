@@ -169,7 +169,7 @@
                             <profileName>Jenkins-Test</profileName>
                             <username>admin</username>
                             <password>admin</password>
-                            <serverUrl>http://dtserver:8021</serverUrl>
+                            <serverUrl>http://dtserver:802  0</serverUrl>
                             <additionalProperties></additionalProperties>
                         </configuration>
                         <!-- start this test in the process-test-classes phase
